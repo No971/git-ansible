@@ -24,7 +24,7 @@
       folder: test
       name: vm1.vm
       state: present
-      template: NOYON
+      template: test
       disk:
       - size_gb: 1
         type: thin

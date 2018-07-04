@@ -23,6 +23,7 @@
       datacenter: noyon.carl
       folder: /noyon.carl/vm/
       name: vm1
+      state: poweredoff
       state: present
       template: test
       disk:

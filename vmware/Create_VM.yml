@@ -21,7 +21,7 @@
       validate_certs: no
       esxi_hostname: 192.168.72.155
       datacenter: noyon.carl
-      folder: /noyon.carl/vm/test
+      folder: /noyon.carl/vm/
       name: vm1
       state: present
       template: test

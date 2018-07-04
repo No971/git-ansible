@@ -2,27 +2,14 @@
 - name: Create a VM from a template
   hosts: localhost
 
-  vars_prompt:
-    - name: "vcenter_hostname"
-      prompt: "Enter vcenter hostname"
-      private: no
-      default: "vc65.labvmware.local"
-    - name: "vcenter_user"
-      prompt: "Enter vcenter username"
-      private: no
-      default: "administrator@vsphere.local"
-    - name: "vcenter_pass"
-      prompt: "Enter vcenter password"
-      private: yes
-
   vars:
-    datacenter: 'Labvmware'
-    esxi_host: 'esxi1.labvmware.local'
+    datacenter: 'noyyon.carl'
+    esxi_host: '192.168.72.142'
     notes: 'Created by Ansible'
-    vcenter_hostname: vc65.labvmware.local
+    vcenter_hostname: 192.168.72.145
     vcenter_user: administrator@vsphere.local
-    vcenter_pass: Espoir@2012
-    datastore: vsanDatastore
+    vcenter_pass: vmware
+    datastore: datastore1
     network: VM Network
     memory: 10
     cpucount: 1

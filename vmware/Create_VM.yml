@@ -2,8 +2,8 @@
 - name: Create a VM from a template
   hosts: localhost
   vars:
-    datacenter: noyon.carl
-    esxi_host: 192.168.72.142
+    datacenter: 'noyon.carl'
+    esxi_host: '192.168.72.142'
     notes: 'Created by Ansible'
     vcenter_hostname: 192.168.72.144
     vcenter_user: administrator@vsphere.local
@@ -19,7 +19,7 @@
     vmware_guest:
       hostname: 192.168.72.144
       username: administrator@vsphere.local
-      password: vmware
+      password: 'vmware'
       validate_certs: no
       folder: /noyon.carl
       name: noyon.vm
@@ -38,4 +38,4 @@
 #        mac: aa:bb:dd:aa:00:14
       wait_for_ip_address: yes
 #    delegate_to: localhost
-    register: deploy
+#    register: deploy

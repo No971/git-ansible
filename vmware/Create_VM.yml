@@ -2,8 +2,6 @@
 - name: Create a VM from a template
   hosts: localhost
   vars:
-    datacenter: 'noyon.carl'
-    esxi_hostname: '192.168.72.142'
     notes: 'Created by Ansible'
     vcenter_hostname: 192.168.72.144
     vcenter_user: administrator@vsphere.local
@@ -21,6 +19,8 @@
       username: administrator@vsphere.local
       password: 'vmware'
       validate_certs: no
+      esxi_hostname: 192.168.72.142
+      datacenter: noyon.carl
       folder: /noyon.carl
       name: noyon.vm
       state: present

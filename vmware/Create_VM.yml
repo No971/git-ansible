@@ -21,10 +21,10 @@
       validate_certs: no
       esxi_hostname: 192.168.72.142
       datacenter: noyon.carl
-      folder: /noyon.carl
+#      folder: /noyon.carl
       name: noyon.vm
       state: present
-      template: vm1
+      template: NOYON
       disk:
       - size_gb: 1
         type: thin

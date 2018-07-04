@@ -4,7 +4,7 @@
 
   vars:
     datacenter: noyon.carl
-    esxi_host: '192.168.72.142'
+    esxi_host: 192.168.72.142
     notes: 'Created by Ansible'
     vcenter_hostname: 192.168.72.144
     vcenter_user: administrator@vsphere.local
@@ -13,7 +13,7 @@
     network: VM Network
     memory: 10
     cpucount: 1
-    osid: debin6_64Guest
+    osid: debin7_64Guest
 
   tasks:
   - name: Create a VM from template

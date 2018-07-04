@@ -18,18 +18,18 @@
   tasks:
   - name: Create a VM from template
     vmware_guest:
-      hostname: vc65.labvmware.local
+      hostname: 192.168.72.145
       username: administrator@vsphere.local
-      password: 'YourPassword'
+      password: 'vmware'
       validate_certs: no
-#      folder: /esxi3_local1/vm1/
-      name: testvm_3
+#      folder: /noyon.carl
+      name: noyon.vm
       state: present
       template: vm1
       disk:
       - size_gb: 1
         type: thin
-        datastore: esxi3_local1
+        datastore: datastore1
       hardware:
         memory_mb: 512
         num_cpus: 1

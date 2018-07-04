@@ -10,7 +10,7 @@
     network: VM Network
     memory: 10
     cpucount: 1
-    osid: debin7_64Guest
+    osid: debin6_64Guest
 
   tasks:
   - name: Create a VM from template
@@ -22,7 +22,7 @@
       esxi_hostname: 192.168.72.155
       datacenter: noyon.carl
       folder: /datastore1/test/
-      name: vm1.vm
+      name: vm1
       state: present
       template: test
       disk:

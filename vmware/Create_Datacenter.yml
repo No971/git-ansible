@@ -6,10 +6,10 @@
   - name: Create Datacenter
     local_action:
       module: vmware_datacenter
-      hostname: vc65.labvmware.local
+      hostname: 192.168.72.144
       username: administrator@vsphere.local
-      password: 'YourMdp'
-      datacenter_name: 'vDc_Ansible'
+      password: 'vmware'
+      datacenter_name: 'noyon.carl'
       state: present
       validate_certs: no
 #    delegate_to: localhost

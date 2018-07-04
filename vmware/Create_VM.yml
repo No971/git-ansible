@@ -3,7 +3,7 @@
   hosts: localhost
 
   vars:
-    datacenter: 'noyon.carl'
+    datacenter: noyon.carl
     esxi_host: '192.168.72.142'
     notes: 'Created by Ansible'
     vcenter_hostname: 192.168.72.144
@@ -20,7 +20,7 @@
     vmware_guest:
       hostname: 192.168.72.144
       username: administrator@vsphere.local
-      password: 'vmware'
+      password: vmware
       validate_certs: no
       folder: /noyon.carl
       name: noyon.vm

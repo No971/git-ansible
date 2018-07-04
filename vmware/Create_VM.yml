@@ -6,7 +6,7 @@
     datacenter: 'noyyon.carl'
     esxi_host: '192.168.72.142'
     notes: 'Created by Ansible'
-    vcenter_hostname: 192.168.72.145
+    vcenter_hostname: 192.168.72.144
     vcenter_user: administrator@vsphere.local
     vcenter_pass: vmware
     datastore: datastore1
@@ -18,7 +18,7 @@
   tasks:
   - name: Create a VM from template
     vmware_guest:
-      hostname: 192.168.72.145
+      hostname: 192.168.72.144
       username: administrator@vsphere.local
       password: 'vmware'
       validate_certs: no
